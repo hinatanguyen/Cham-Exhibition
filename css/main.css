@@ -359,6 +359,7 @@ body {
     .content-right {
         text-align: left;
         padding-left: 0;
+        padding-right: 20px;
     }
     
     .main-heading {
