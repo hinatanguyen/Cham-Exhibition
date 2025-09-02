@@ -92,12 +92,14 @@ body {
 /* Hero Section */
 .hero-section {
     background-color: var(--cham-orange);
-    padding: 32px 0;
+    padding: 48px 24px;
 }
 
 .hero-container {
     display: flex;
     justify-content: center;
+    max-width: 99%;
+    margin: 0 auto;
 }
 
 .image-container {
@@ -109,9 +111,7 @@ body {
 .pattern-image {
     width: 100%;
     height: auto;
-    object-fit: cover;
-    max-width: none;
-    min-width: 1360px;
+    object-fit: contain;
 }
 
 /* Main Content Section */
@@ -332,7 +332,7 @@ body {
     }
     
     .hero-section {
-        padding: 64px 0;
+        padding: 80px 32px;
     }
     
     .content-section {
@@ -436,6 +436,19 @@ body {
     
     .mobile-nav-button {
         display: block;
+    }
+    
+    /* Mobile hero section */
+    .hero-section {
+        padding: 32px 16px;
+    }
+    
+    .hero-container {
+        max-width: 100%;
+    }
+    
+    .image-container {
+        max-width: 100%;
     }
     
     /* Mobile squares grid */
