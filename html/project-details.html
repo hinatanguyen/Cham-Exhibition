@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chấm. Exhibition</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/about.css">
-
+    <title>Project Details - Chấm. Exhibition</title>
+    <link rel="stylesheet" href="../css/project-details.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -33,65 +32,56 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
+    <!-- Project Details Content -->
     <main class="main-content">
-        <!-- Core Team Section -->
-        <section class="team-section">
-            <div class="team-image"></div>
-            <div class="team-content">
-                <h2 class="team-title">Core Team</h2>
-                <div class="team-members">
-                    <p>Nguyễn Hiền Mai</p>
-                    <p>Trần Thế Trung</p>
-                    <p>Trương Trí Lâm</p>
-                    <p>Nguyễn Trọng Phú</p>
+        <div class="project-header">
+            <div class="author-section">
+                <div class="author-avatar">
+                    <img src="" alt="Author Avatar" class="author-image" id="authorAvatar">
+                </div>
+                <div class="author-info">
+                    <h2 class="author-name" id="authorName">Loading...</h2>
+                    <p class="author-bio" id="authorBio">Loading bio...</p>
+                    <div class="author-links">
+                        <a href="#" class="author-link" id="authorEmail">Email →</a>
+                        <a href="#" class="author-link" id="authorPortfolio">Portfolio →</a>
+                    </div>
                 </div>
             </div>
-        </section>
+            <div class="project-section">
+                <h1 class="project-title" id="projectTitle">Loading...</h1>
+                <div class="project-meta">
+                    <div class="project-tags">
+                        <span class="tag" id="projectCategory1">Loading...</span>
+                        <span class="tag" id="projectCategory2"></span>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <p id="projectDescription">Loading project description...</p>
+                </div>
+            </div>
+        </div>
 
-        <!-- Production Team Section -->
-        <section class="team-section">
-            <div class="team-image"></div>
-            <div class="team-content">
-                <h2 class="team-title">Production Team</h2>
-                <div class="team-members">
-                    <p>Trương Trí Lâm</p>
-                    <p>Trần Thế Trung</p>
-                    <p>Lê Trung Đức</p>
-                    <p>Nguyễn Trọng Phú</p>
-                    <p>Nguyễn Ngọc Dũng</p>
-                    <p>Trần Duy Anh</p>
-                    <p>Vũ Đức Minh</p>
-                    <p>Nguyễn Duy Hưng</p>
+        <div class="project-gallery">
+            <div class="main-image">
+                <img src="" alt="Main Project Image" id="mainProjectImage">
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="" alt="Gallery Image 1" id="galleryImage1">
+                </div>
+                <div class="gallery-item">
+                    <img src="" alt="Gallery Image 2" id="galleryImage2">
                 </div>
             </div>
-        </section>
+            <div class="full-width-image">
+                <img src="" alt="Full Width Image" id="fullWidthImage">
+            </div>
+        </div>
 
-        <!-- Copywriting Team Section -->
-        <section class="team-section">
-            <div class="team-image"></div>
-            <div class="team-content">
-                <h2 class="team-title">Copywriting Team</h2>
-                <div class="team-members">
-                    <p>Nguyễn Hiền Mai</p>
-                    <p>Lê Bảo Phương</p>
-                    <p>Phạm Hồng Diệp Trúc</p>
-                    <p>Nguyễn Vũ Minh Khuê</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Lecturers Section -->
-        <section class="team-section">
-            <div class="team-image"></div>
-            <div class="team-content">
-                <h2 class="team-title">Lecturers</h2>
-                <div class="team-members">
-                    <p>Jon Kuiter</p>
-                    <p>Gary Dickson</p>
-                </div>
-            </div>
-        </section>
+        <div class="back-to-top">
+            <a href="project.html" class="back-link">Back to all projects</a>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -128,5 +118,7 @@
             </div>
         </div>
     </footer>
+    <script src="/js/project-data.js"></script>
+    <script src="/js/project-details.js"></script>
 </body>
 </html>

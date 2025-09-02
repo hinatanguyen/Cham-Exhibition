@@ -1,3 +1,11 @@
+:root {
+    --cham-orange: #FFB400;
+    --cham-dark: #2C2C2C;
+    --cham-gray: #F5F5F5;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
 * {
             margin: 0;
             padding: 0;
@@ -11,52 +19,73 @@
             line-height: 1.4;
         }
 
-        /* Navigation */
-        .navbar {
+        /* Navigation Styles */
+        .nav-main {
             width: 100%;
-            height: 83px;
-            background-color: #FFB400;
+            height: 80px;
+            background-color: var(--cham-orange);
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 0 40px;
+            padding: 0 24px;
+            position: relative;
         }
 
-        .logo {
+        .nav-logo {
             display: flex;
             align-items: center;
         }
 
-        .logo-text {
-            font-size: 40px;
-            font-weight: 700;
-            color: #2C2C2C;
+        .nav-logo-link {
+            display: flex;
+            align-items: end;
+            text-decoration: none;
         }
 
-        .logo-dot {
-            width: 9px;
-            height: 9px;
-            background-color: #2C2C2C;
+        .nav-logo-text {
+            color: var(--cham-dark);
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .nav-logo-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--cham-dark);
             border-radius: 50%;
-            margin-left: 8px;
-            margin-top: 8px;
+            margin-left: 4px;
+            margin-bottom: 4px;
         }
 
         .nav-links {
-            display: flex;
-            gap: 30px;
+            display: none;
+            align-items: center;
+            gap: 32px;
         }
 
-        .nav-link {
-            font-size: 19px;
-            font-weight: 700;
-            color: #2C2C2C;
+        .nav-link-item {
+            color: var(--cham-dark);
+            font-size: 18px;
+            font-weight: 800;
             text-decoration: none;
             transition: opacity 0.3s ease;
         }
 
-        .nav-link:hover {
+        .nav-link-item:hover {
             opacity: 0.8;
+        }
+
+        .mobile-nav-button {
+            display: block;
+        }
+
+        .mobile-menu-btn {
+            background: none;
+            border: none;
+            color: var(--cham-dark);
+            cursor: pointer;
+            padding: 4px;
         }
 
         /* Main Content */
@@ -105,73 +134,160 @@
         }
 
         /* Footer */
-        .footer {
-            width: 100%;
-            background-color: #231F20;
-            padding: 38px 40px;
-            margin-top: 50px;
+        .footer-main {
+            background-color: var(--cham-dark);
+            color: var(--white);
+            padding: 32px 24px;
         }
 
-        .footer-content {
-            max-width: 1440px;
+        .footer-container {
+            max-width: 1280px;
             margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+
+        .footer-section {
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
+            flex-direction: column;
+            gap: 16px;
         }
 
-        .footer-left {
-            color: #ffffff;
-        }
-
-        .footer-title {
-            font-size: 40px;
+        .footer-heading-main {
+            color: var(--white);
+            font-size: 20px;
             font-weight: 700;
-            margin-bottom: 20px;
         }
 
-        .footer-description {
-            font-size: 19px;
-            font-weight: 400;
-            line-height: 1.4;
-        }
-
-        .footer-middle {
-            color: #ffffff;
-        }
-
-        .social-title {
-            font-size: 19px;
+        .footer-heading-social {
+            color: var(--white);
+            font-size: 18px;
             font-weight: 700;
-            margin-bottom: 25px;
         }
 
-        .social-links {
-            font-size: 19px;
-            font-weight: 400;
+        .footer-text-block {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
         }
 
-        .social-links p {
-            margin-bottom: 8px;
-            cursor: pointer;
+        .footer-text-block p {
+            font-size: 14px;
+            color: var(--white);
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .footer-social-link {
+            color: var(--white);
+            font-size: 14px;
+            text-decoration: none;
             transition: opacity 0.3s ease;
         }
 
-        .social-links p:hover {
+        .footer-social-link:hover {
             opacity: 0.8;
         }
 
-        .footer-right {
+        .footer-logo-section {
             display: flex;
-            align-items: center;
+            justify-content: flex-start;
         }
 
-        .rmit-logo {
-            width: 284px;
-            height: auto;
+        .footer-logo-container {
+            text-align: left;
+        }
+
+        .footer-logo-image {
+            height: 48px;
+            width: auto;
+            filter: brightness(0) invert(1);
         }
 
         /* Responsive Design */
+        /* Tablet Styles */
+        @media (min-width: 768px) {
+            .nav-links {
+                display: flex;
+            }
+            
+            .mobile-nav-button {
+                display: none;
+            }
+            
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .footer-logo-section {
+                grid-column: span 2;
+            }
+        }
+
+        /* Desktop Styles */
+        @media (min-width: 1024px) {
+            .nav-main {
+                height: 83px;
+                padding: 0 40px;
+            }
+            
+            .nav-logo-text {
+                font-size: 39.81px;
+            }
+            
+            .nav-logo-dot {
+                width: 9px;
+                height: 9px;
+            }
+            
+            .nav-links {
+                gap: 48px;
+            }
+            
+            .nav-link-item {
+                font-size: 19.2px;
+            }
+            
+            .footer-main {
+                padding: 48px 40px;
+            }
+            
+            .footer-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .footer-logo-section {
+                grid-column: span 1;
+                justify-content: flex-end;
+            }
+            
+            .footer-logo-container {
+                text-align: right;
+            }
+            
+            .footer-logo-image {
+                    height: 91px;
+                    width: auto;
+            }
+            
+            .footer-heading-main {
+                font-size: 24px;
+            }
+            
+            .footer-text-block p,
+            .footer-social-link {
+                font-size: 16px;
+            }
+        }
+
         @media (max-width: 1200px) {
             .main-content {
                 padding: 40px 20px 0;
@@ -190,14 +306,6 @@
         }
 
         @media (max-width: 968px) {
-            .navbar {
-                padding: 0 20px;
-            }
-            
-            .nav-links {
-                gap: 20px;
-            }
-            
             .team-section {
                 flex-direction: column;
                 margin-bottom: 50px;
@@ -218,35 +326,9 @@
             .team-members {
                 font-size: 24px;
             }
-            
-            .footer-content {
-                flex-direction: column;
-                gap: 30px;
-            }
-            
-            .footer-title {
-                font-size: 32px;
-            }
-            
-            .rmit-logo {
-                width: 240px;
-            }
         }
 
         @media (max-width: 640px) {
-            .navbar {
-                height: 70px;
-                padding: 0 15px;
-            }
-            
-            .logo-text {
-                font-size: 32px;
-            }
-            
-            .nav-links {
-                display: none;
-            }
-            
             .main-content {
                 padding: 30px 15px 0;
             }
@@ -269,22 +351,15 @@
                 font-size: 20px;
                 line-height: 32px;
             }
-            
-            .footer {
-                padding: 30px 15px;
+        }
+
+        /* Utility classes for responsive behavior */
+        @media (max-width: 767px) {
+            .nav-links {
+                display: none;
             }
             
-            .footer-title {
-                font-size: 28px;
-            }
-            
-            .footer-description,
-            .social-title,
-            .social-links {
-                font-size: 16px;
-            }
-            
-            .rmit-logo {
-                width: 200px;
+            .mobile-nav-button {
+                display: block;
             }
         }

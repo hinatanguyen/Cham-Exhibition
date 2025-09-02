@@ -1,78 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projects | Chấm Exhibition</title>
-  <link rel="stylesheet" href="../CSS/style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chấm. Exhibition</title>
+    <link rel="stylesheet" href="/css/project.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="logo">Chấm.</div>
-    <nav>
-      <a href="project.html" class="active">Projects</a>
-      <a href="../HTML/main.html">About</a>
+    <!-- Navigation -->
+    <nav class="nav-main">
+        <div class="nav-logo">
+            <a href="main.html" class="nav-logo-link">
+                <span class="nav-logo-text">Chấm</span>
+                <div class="nav-logo-dot"></div>
+            </a>
+        </div>
+        
+        <div class="nav-links">
+            <a href="project.html" class="nav-link-item">Projects</a>
+            <a href="about.html" class="nav-link-item">About</a>
+        </div>
+        
+        <!-- Mobile menu button -->
+        <div class="mobile-nav-button">
+            <button class="mobile-menu-btn">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
     </nav>
-  </header>
-  <main>
-    <section class="projects-grid">
-      <div class="project-card">
-        <div class="project-thumb">
-          <img src="../assets/project1.jpg" alt="Project 1" />
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Projects Grid -->
+        <div class="projects-container">
+            <!-- Desktop Layout -->
+            <div class="projects-grid-desktop">
+                <!-- Row 1: Projects 1-2 -->
+                <div class="grid-row">
+                    <div class="project-card" onclick="handleProjectClick(1)">
+                        <div class="project-image"></div>
+                        <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                    </div>
+                    <div class="project-card" onclick="handleProjectClick(2)">
+                        <div class="project-image"></div>
+                        <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                    </div>
+                    <div class="grid-spacer"></div>
+                </div>
+                
+                <!-- Row 2: Projects 3-4 -->
+                <div class="grid-row">
+                    <div class="project-card" onclick="handleProjectClick(3)">
+                        <div class="project-image"></div>
+                        <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                    </div>
+                    <div class="grid-spacer"></div>
+                    <div class="project-card" onclick="handleProjectClick(4)">
+                        <div class="project-image"></div>
+                        <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                    </div>
+                </div>
+                
+                <!-- Row 3: Projects 5-6 -->
+                <div class="grid-row">
+                    <div class="project-card" onclick="handleProjectClick(5)">
+                        <div class="project-image"></div>
+                        <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                    </div>
+                    <div class="project-card" onclick="handleProjectClick(6)">
+                        <div class="project-image"></div>
+                        <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                    </div>
+                    <div class="grid-spacer"></div>
+                </div>
+                
+                <!-- Row 4: Projects 7-8 -->
+                <div class="grid-row">
+                    <div class="grid-spacer"></div>
+                    <div class="project-card" onclick="handleProjectClick(7)">
+                        <div class="project-image"></div>
+                        <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                    </div>
+                    <div class="project-card" onclick="handleProjectClick(8)">
+                        <div class="project-image"></div>
+                        <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                    </div>
+                </div>
+                
+                <!-- Row 5: Projects 9-10 -->
+                <div class="grid-row">
+                    <div class="project-card" onclick="handleProjectClick(9)">
+                        <div class="project-image"></div>
+                        <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                    </div>
+                    <div class="project-card" onclick="handleProjectClick(10)">
+                        <div class="project-image"></div>
+                        <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                    </div>
+                    <div class="grid-spacer"></div>
+                </div>
+                
+                <!-- Row 6: Projects 11-12 -->
+                <div class="grid-row">
+                    <div class="project-card" onclick="handleProjectClick(11)">
+                        <div class="project-image"></div>
+                        <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                    </div>
+                    <div class="grid-spacer"></div>
+                    <div class="project-card" onclick="handleProjectClick(12)">
+                        <div class="project-image"></div>
+                        <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tablet Layout -->
+            <div class="projects-grid-tablet">
+                <div class="project-card" onclick="handleProjectClick(1)">
+                    <div class="project-image"></div>
+                    <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                </div>
+                <div class="project-card" onclick="handleProjectClick(2)">
+                    <div class="project-image"></div>
+                    <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                </div>
+                <div class="project-card" onclick="handleProjectClick(3)">
+                    <div class="project-image"></div>
+                    <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                </div>
+                <div class="project-card" onclick="handleProjectClick(4)">
+                    <div class="project-image"></div>
+                    <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                </div>
+                <div class="project-card" onclick="handleProjectClick(5)">
+                    <div class="project-image"></div>
+                    <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                </div>
+                <div class="project-card" onclick="handleProjectClick(6)">
+                    <div class="project-image"></div>
+                    <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                </div>
+                <div class="project-card" onclick="handleProjectClick(7)">
+                    <div class="project-image"></div>
+                    <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                </div>
+                <div class="project-card" onclick="handleProjectClick(8)">
+                    <div class="project-image"></div>
+                    <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                </div>
+                <div class="project-card" onclick="handleProjectClick(9)">
+                    <div class="project-image"></div>
+                    <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                </div>
+                <div class="project-card" onclick="handleProjectClick(10)">
+                    <div class="project-image"></div>
+                    <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                </div>
+                <div class="project-card" onclick="handleProjectClick(11)">
+                    <div class="project-image"></div>
+                    <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                </div>
+                <div class="project-card" onclick="handleProjectClick(12)">
+                    <div class="project-image"></div>
+                    <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                </div>
+            </div>
+            
+            <!-- Mobile Layout -->
+            <div class="projects-grid-mobile">
+                <div class="project-card" onclick="handleProjectClick(1)">
+                    <div class="project-image"></div>
+                    <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                </div>
+                <div class="project-card" onclick="handleProjectClick(2)">
+                    <div class="project-image"></div>
+                    <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                </div>
+                <div class="project-card" onclick="handleProjectClick(3)">
+                    <div class="project-image"></div>
+                    <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                </div>
+                <div class="project-card" onclick="handleProjectClick(4)">
+                    <div class="project-image"></div>
+                    <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                </div>
+                <div class="project-card" onclick="handleProjectClick(5)">
+                    <div class="project-image"></div>
+                    <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                </div>
+                <div class="project-card" onclick="handleProjectClick(6)">
+                    <div class="project-image"></div>
+                    <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                </div>
+                <div class="project-card" onclick="handleProjectClick(7)">
+                    <div class="project-image"></div>
+                    <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                </div>
+                <div class="project-card" onclick="handleProjectClick(8)">
+                    <div class="project-image"></div>
+                    <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                </div>
+                <div class="project-card" onclick="handleProjectClick(9)">
+                    <div class="project-image"></div>
+                    <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                </div>
+                <div class="project-card" onclick="handleProjectClick(10)">
+                    <div class="project-image"></div>
+                    <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                </div>
+                <div class="project-card" onclick="handleProjectClick(11)">
+                    <div class="project-image"></div>
+                    <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                </div>
+                <div class="project-card" onclick="handleProjectClick(12)">
+                    <div class="project-image"></div>
+                    <h3 class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+                </div>
+            </div>
         </div>
-        <div class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</div>
-      </div>
-      <div class="project-card">
-        <div class="project-thumb">
-          <img src="../assets/project2.jpg" alt="Project 2" />
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-main">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 class="footer-heading-main">Chấm. Exhibition</h3>
+                    <div class="footer-text-block">
+                        <p>Chấm Exhibition, Capstone Projects</p>
+                        <p>Bachelor of Design Studies</p>
+                        <p>School of Communication & Design</p>
+                        <p>from RMIT University Hanoi</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading-social">Social</h4>
+                    <div class="footer-links">
+                        <a href="#" class="footer-social-link">Instagram</a>
+                        <a href="#" class="footer-social-link">Facebook</a>
+                    </div>
+                </div>
+                
+                <div class="footer-logo-section">
+                    <div class="footer-logo-container">
+                        <img 
+                            src="/images/footer/rmit_logo.png" 
+                            alt="RMIT University" 
+                            class="footer-logo-image"
+                        />
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</div>
-      </div>
-      <div class="project-card">
-        <div class="project-thumb">
-          <img src="../assets/project3.jpg" alt="Project 3" />
-        </div>
-        <div class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</div>
-      </div>
-      <div class="project-card">
-        <div class="project-thumb">
-          <img src="../assets/project4.jpg" alt="Project 4" />
-        </div>
-        <div class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</div>
-      </div>
-      <div class="project-card">
-        <div class="project-thumb">
-          <img src="../assets/project5.jpg" alt="Project 5" />
-        </div>
-        <div class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</div>
-      </div>
-      <div class="project-card">
-        <div class="project-thumb">
-          <img src="../assets/project6.jpg" alt="Project 6" />
-        </div>
-        <div class="project-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="footer-left">
-      <h2>Chấm. Exhibition</h2>
-      <p>
-        Chấm Exhibition Committee<br>
-        Bachelor of Design Studies<br>
-        School of Communication & Design<br>
-        from RMIT University Hanoi
-      </p>
-    </div>
-    <div class="footer-center">
-      <h3>Social</h3>
-      <a href="#">Instagram</a><br>
-      <a href="#">Facebook</a>
-    </div>
-    <div class="footer-right">
-      <img src="../HTML/rmit-logo.png" alt="RMIT University" />
-      <span>School of Communication & Design</span>
-    </div>
-  </footer>
+    </footer>
+
+    <script src="/js/navigate.js"></script>
 </body>
 </html>

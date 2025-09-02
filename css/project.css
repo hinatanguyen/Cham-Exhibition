@@ -1,35 +1,41 @@
-/* Reset and base styles */
+/* CSS Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* CSS Custom Properties */
 :root {
     --cham-orange: #FFB400;
-    --cham-dark: #2C2C2C;
-    --cham-gray: #F5F5F5;
+    --cham-gray: #736E69;
+    --cham-dark: #231F20;
+    --cham-text: #2C2C2C;
     --white: #FFFFFF;
-    --black: #000000;
+    --max-width: 1400px;
 }
 
+/* Base Typography */
 body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    line-height: 1.6;
-    color: var(--cham-dark);
+    font-family: 'Plus Jakarta Sans', -apple-system, Roboto, Helvetica, sans-serif;
     background-color: var(--white);
+    color: var(--cham-text);
+    line-height: 1.5;
+    min-height: 100vh;
 }
 
-/* Navigation Styles */
+/* Navigation Bar */
 .nav-main {
     width: 100%;
     height: 80px;
     background-color: var(--cham-orange);
+    position: sticky;
+    top: 0;
+    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 24px;
-    position: relative;
 }
 
 .nav-logo {
@@ -44,7 +50,7 @@ body {
 }
 
 .nav-logo-text {
-    color: var(--cham-dark);
+    color: var(--cham-text);
     font-size: 32px;
     font-weight: 800;
     line-height: 1;
@@ -53,7 +59,7 @@ body {
 .nav-logo-dot {
     width: 8px;
     height: 8px;
-    background-color: var(--cham-dark);
+    background-color: var(--cham-text);
     border-radius: 50%;
     margin-left: 4px;
     margin-bottom: 4px;
@@ -66,7 +72,7 @@ body {
 }
 
 .nav-link-item {
-    color: var(--cham-dark);
+    color: var(--cham-text);
     font-size: 18px;
     font-weight: 800;
     text-decoration: none;
@@ -84,108 +90,80 @@ body {
 .mobile-menu-btn {
     background: none;
     border: none;
-    color: var(--cham-dark);
+    color: var(--cham-text);
     cursor: pointer;
     padding: 4px;
 }
 
-/* Hero Section */
-.hero-section {
-    background-color: var(--cham-orange);
-    padding: 32px 0;
+/* Main Content */
+.main-content {
+    padding: 48px 40px;
 }
 
-.hero-container {
-    display: flex;
-    justify-content: center;
+.projects-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
 }
 
-.image-container {
+/* Project Cards */
+.project-card {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-image {
     width: 100%;
-    overflow: hidden;
+    aspect-ratio: 434/244;
+    background-color: var(--cham-gray);
+    transition: background-color 0.2s ease;
 }
 
-.hero-image,
-.pattern-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    max-width: none;
-    min-width: 1360px;
+.project-card:hover .project-image {
+    background-color: rgba(115, 110, 105, 0.9);
 }
 
-/* Main Content Section */
-.content-section {
-    background-color: var(--white);
-    padding: 48px 0;
+.project-title {
+    margin-top: 20px;
+    color: var(--cham-text);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: normal;
+    max-width: 347px;
 }
 
-.content-container {
-    width: 100%;
-    margin: 0;
-    padding: 0 20px;
+/* Desktop Grid Layout */
+.projects-grid-desktop {
+    display: none;
 }
 
-.content-grid {
+.grid-row {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 48px;
 }
 
-.content-left,
+.grid-spacer {
+    /* Empty space for staggered layout */
+}
 
-.content-right {
-    display: flex;
-    flex-direction: column;
+/* Tablet Grid Layout */
+.projects-grid-tablet {
+    display: none;
+    grid-template-columns: 1fr 1fr;
     gap: 24px;
 }
 
-.main-heading {
-    color: var(--cham-dark);
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-}
-
-.main-paragraph {
-    color: var(--cham-dark);
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.cta-container {
-    padding-top: 16px;
-}
-
-.cta-link {
-    color: var(--cham-dark);
-    font-size: 16px;
-    font-weight: 700;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    transition: opacity 0.3s ease;
-}
-
-.cta-link:hover {
-    opacity: 0.8;
-}
-
-/* Pattern Section */
-.pattern-section {
-    background-color: var(--cham-gray);
-    padding: 32px 0;
-}
-
-.pattern-container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 24px;
-}
-
-.pattern-overlay {
-    opacity: 0.2;
+/* Mobile Grid Layout */
+.projects-grid-mobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
 }
 
 /* Footer */
@@ -198,27 +176,24 @@ body {
 .footer-container {
     max-width: 1280px;
     margin: 0 auto;
-    width: 100%; 
-    padding: 0 24px;
 }
-
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr auto;
-    align-items: start;
-    justify-content: space-between;
-    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 32px;
 }
 
 .footer-section {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
 }
 
 .footer-heading-main {
-    margin-bottom: 8px;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .footer-heading-social {
@@ -230,7 +205,7 @@ body {
 .footer-text-block {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 8px;
 }
 
 .footer-text-block p {
@@ -257,8 +232,7 @@ body {
 
 .footer-logo-section {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .footer-logo-container {
@@ -271,8 +245,18 @@ body {
     filter: brightness(0) invert(1);
 }
 
-/* Tablet Styles */
+/* Responsive Design */
+
+/* Tablet breakpoint (768px and up) */
 @media (min-width: 768px) {
+    .projects-grid-mobile {
+        display: none;
+    }
+    
+    .projects-grid-tablet {
+        display: grid;
+    }
+    
     .nav-links {
         display: flex;
     }
@@ -290,8 +274,16 @@ body {
     }
 }
 
-/* Desktop Styles */
+/* Desktop breakpoint (1024px and up) */
 @media (min-width: 1024px) {
+    .projects-grid-tablet {
+        display: none;
+    }
+    
+    .projects-grid-desktop {
+        display: block;
+    }
+    
     .nav-main {
         height: 83px;
         padding: 0 40px;
@@ -314,48 +306,8 @@ body {
         font-size: 19.2px;
     }
     
-    .hero-section {
-        padding: 64px 0;
-    }
-    
-    .content-section {
-        padding: 64px 0;
-    }
-    
-    .content-container {
-        padding: 0 40px;
-    }
-    
-    .content-grid {
-        grid-template-columns: 1.3fr 0.9fr;
-        gap: 80px;
-        align-items: flex-start;
-    }
-    
-    .content-left {
-        text-align: left;
-        padding-right: 0;
-    }
-    
-    .content-right {
-        text-align: left;
-        padding-left: 0;
-    }
-    
-    .main-heading {
-        font-size: 32px;
-    }
-    
-    .main-paragraph {
-        font-size: 18px;
-    }
-    
-    .cta-link {
-        font-size: 18px;
-    }
-    
-    .pattern-container {
-        padding: 0 40px;
+    .main-content {
+        padding: 48px 40px;
     }
     
     .footer-main {
@@ -389,29 +341,14 @@ body {
     }
 }
 
-/* Large Desktop Styles */
-@media (min-width: 1280px) {
-    .main-heading {
-        font-size: 38px;
-    }
-    
-    .content-container {
-        padding: 0 60px;
+/* Large desktop breakpoint (1440px and up) */
+@media (min-width: 1440px) {
+    .main-content {
+        padding: 48px 40px;
     }
 }
 
-/* Extra Large Desktop Styles */
-@media (min-width: 1536px) {
-    .main-heading {
-        font-size: 44px;
-    }
-    
-    .content-container {
-        padding: 0 80px;
-    }
-}
-
-/* Utility classes for responsive behavior */
+/* Mobile responsive adjustments */
 @media (max-width: 767px) {
     .nav-links {
         display: none;
@@ -419,5 +356,48 @@ body {
     
     .mobile-nav-button {
         display: block;
+    }
+    
+    .main-content {
+        padding: 32px 20px;
+    }
+    
+    .project-title {
+        font-size: 16px;
+        margin-top: 16px;
+    }
+}
+
+/* Very small mobile screens */
+@media (max-width: 480px) {
+    .main-content {
+        padding: 24px 16px;
+    }
+}
+
+/* Accessibility and interaction improvements */
+.project-card:focus {
+    outline: 2px solid var(--cham-orange);
+    outline-offset: 2px;
+}
+
+.nav-link:focus,
+.social-link:focus {
+    outline: 2px solid var(--white);
+    outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+    .navbar {
+        position: static;
+    }
+    
+    .project-card:hover {
+        transform: none;
+    }
+    
+    .project-image:hover {
+        background-color: var(--cham-gray);
     }
 }
