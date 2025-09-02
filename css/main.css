@@ -176,6 +176,7 @@ body {
 .pattern-section {
     background-color: var(--cham-gray);
     padding: 32px 0;
+    overflow-x: auto;
 }
 
 .pattern-container {
@@ -184,8 +185,26 @@ body {
     padding: 0 24px;
 }
 
-.pattern-overlay {
-    opacity: 0.2;
+.squares-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.square-item {
+    flex-shrink: 0;
+    width: 118.307px;
+    height: 118.28px;
+    overflow: hidden;
+}
+
+.square-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 /* Footer */
@@ -419,5 +438,26 @@ body {
     
     .mobile-nav-button {
         display: block;
+    }
+    
+    /* Mobile squares grid */
+    .pattern-section {
+        padding: 24px 0;
+    }
+    
+    .pattern-container {
+        padding: 0 12px;
+    }
+    
+    .squares-grid {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 8px;
+        gap: 15px;
+    }
+    
+    .square-item {
+        width: 80px;
+        height: 80px;
     }
 }

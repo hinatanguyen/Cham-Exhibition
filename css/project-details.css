@@ -272,6 +272,10 @@ body {
     display: inline-flex;
     align-items: center;
     transition: opacity 0.3s ease;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
 }
 
 .back-link:hover {
@@ -279,8 +283,8 @@ body {
 }
 
 .back-link::before {
-    content: "← ";
-    margin-right: 8px;
+    content: "";
+    margin-right: 0px;
 }
 
 /* Footer */

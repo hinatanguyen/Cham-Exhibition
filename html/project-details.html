@@ -80,7 +80,7 @@
         </div>
 
         <div class="back-to-top">
-            <a href="project.html" class="back-link">Back to all projects</a>
+            <button class="back-link" onclick="scrollToTop()">Back to top ↑</button>
         </div>
     </main>
 
@@ -120,5 +120,13 @@
     </footer>
     <script src="/js/project-data.js"></script>
     <script src="/js/project-details.js"></script>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </body>
 </html>
