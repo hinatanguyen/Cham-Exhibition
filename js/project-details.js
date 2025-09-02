@@ -3,7 +3,6 @@
             return urlParams.get('id') || '1';
         }
 
-        // Load project data
         function loadProject() {
             const projectId = getProjectId();
             const project = projectData[projectId];
@@ -38,6 +37,13 @@
                 document.getElementById('projectCategory1').textContent = 'N/A';
                 document.getElementById('projectDescription').textContent = 'The requested project could not be found.';
             }
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         }
 
         // Load project when page loads

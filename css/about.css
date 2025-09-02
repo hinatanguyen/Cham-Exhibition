@@ -107,6 +107,14 @@
             background-color: #736E69;
             margin-right: 50px;
             flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .team-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
 
         .team-content {

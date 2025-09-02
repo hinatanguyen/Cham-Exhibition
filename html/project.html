@@ -258,6 +258,39 @@
         </div>
     </footer>
 
+    <script src="/js/project-data.js"></script>
     <script src="/js/navigate.js"></script>
+    <script>
+        // Load project data when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            loadProjectData();
+        });
+
+        function loadProjectData() {
+            // Get all project cards
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            projectCards.forEach((card, index) => {
+                const projectId = index + 1;
+                const project = projectData[projectId];
+                
+                if (project) {
+                    // Update project title
+                    const titleElement = card.querySelector('.project-title');
+                    if (titleElement) {
+                        titleElement.textContent = project.title;
+                    }
+                    
+                    // Update project image - use mainImage as background
+                    const imageElement = card.querySelector('.project-image');
+                    if (imageElement && project.mainImage) {
+                        imageElement.style.backgroundImage = `url(${project.mainImage})`;
+                        imageElement.style.backgroundSize = 'cover';
+                        imageElement.style.backgroundPosition = 'center';
+                    }
+                }
+            });
+        }
+    </script>
 </body>
 </html>
