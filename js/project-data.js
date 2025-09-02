@@ -180,6 +180,3 @@ const projectData = {
         fullWidthImage: "https://via.placeholder.com/1200x400/444444/111111?text=Full+Width"
     }
 };
-
-// Export for use in other files (if using modules)
-// export { projectData };

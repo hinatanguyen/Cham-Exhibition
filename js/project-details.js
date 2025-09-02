@@ -22,15 +22,12 @@
                 document.getElementById('galleryImage2').src = project.galleryImage2;
                 document.getElementById('fullWidthImage').src = project.fullWidthImage;
                 
-                // Hide second category if empty
                 if (!project.category2) {
                     document.getElementById('projectCategory2').style.display = 'none';
                 }
                 
-                // Update page title
                 document.title = `${project.title} - Chấm. Exhibition`;
             } else {
-                // Handle project not found
                 document.getElementById('projectTitle').textContent = 'Project Not Found';
                 document.getElementById('authorName').textContent = 'Unknown';
                 document.getElementById('authorBio').textContent = 'Project information not available.';
@@ -46,5 +43,4 @@
             });
         }
 
-        // Load project when page loads
         document.addEventListener('DOMContentLoaded', loadProject);
