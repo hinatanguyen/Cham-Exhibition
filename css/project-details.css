@@ -14,7 +14,13 @@
 }
 
 body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    .gallery-item:first-child {
+    height: 600px;
+}
+
+.gallery-item:last-child {
+    height: 600px;
+}mily: 'Plus Jakarta Sans', sans-serif;
     line-height: 1.6;
     color: var(--cham-dark);
     background-color: var(--white);
@@ -213,7 +219,7 @@ body {
 
 .main-image {
     width: 100%;
-    height: 400px;
+    height: 600px;
     background-color: #999999;
     border-radius: 8px;
     overflow: hidden;
@@ -227,15 +233,23 @@ body {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.63fr 1fr;
     gap: 20px;
+    align-items: start;
 }
 
 .gallery-item {
-    height: 250px;
     background-color: #999999;
     border-radius: 8px;
     overflow: hidden;
+}
+
+.gallery-item:first-child {
+    height: 500px;
+}
+
+.gallery-item:last-child {
+    height: 500px;
 }
 
 .gallery-item img {
@@ -246,7 +260,7 @@ body {
 
 .full-width-image {
     width: 100%;
-    height: 300px;
+    height: 400px;
     background-color: #999999;
     border-radius: 8px;
     overflow: hidden;
@@ -462,19 +476,24 @@ body {
     }
 
     .main-image {
-        height: 250px;
+        height: 375px;
     }
 
     .gallery-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 0.63fr 1fr;
+        gap: 16px;
     }
 
-    .gallery-item {
-        height: 200px;
+    .gallery-item:first-child {
+        height: 480px;
+    }
+
+    .gallery-item:last-child {
+        height: 480px;
     }
 
     .full-width-image {
-        height: 200px;
+        height: 265px;
     }
 }
 
@@ -494,15 +513,21 @@ body {
     }
 
     .main-image {
-        height: 200px;
+        height: 300px;
     }
 
-    .gallery-item {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .gallery-item:first-child,
+    .gallery-item:last-child {
         height: 150px;
     }
 
     .full-width-image {
-        height: 150px;
+        height: 200px;
     }
 }
 
