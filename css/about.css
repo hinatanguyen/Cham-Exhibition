@@ -137,12 +137,12 @@
         .footer-main {
             background-color: var(--cham-dark);
             color: var(--white);
-            padding: 32px 24px;
+            padding: 32px 0;
         }
 
         .footer-container {
-            max-width: 1280px;
-            margin: 0 auto;
+            width: 100%;
+            padding: 0;
         }
 
         .footer-grid {
@@ -207,7 +207,7 @@
         }
 
         .footer-logo-image {
-            height: 48px;
+            height: 80px;
             width: auto;
             filter: brightness(0) invert(1);
         }
@@ -274,7 +274,7 @@
             }
             
             .footer-logo-image {
-                    height: 91px;
+                    height: 120px;
                     width: auto;
             }
             
