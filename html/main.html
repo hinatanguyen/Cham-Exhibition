@@ -1,58 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chấm Exhibition</title>
-  <link rel="stylesheet" href="../css/style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chấm. Exhibition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-  <header>
-    <div class="logo">Chấm.</div>
-    <nav>
-      <a href="#">Projects</a>
-      <a href="#">About</a>
+    <!-- Navigation -->
+    <nav class="nav-main">
+        <div class="nav-logo">
+            <a href="main.html" class="nav-logo-link">
+                <span class="nav-logo-text">Chấm</span>
+                <div class="nav-logo-dot"></div>
+            </a>
+        </div>
+        
+        <div class="nav-links">
+            <a href="project.html" class="nav-link-item">Projects</a>
+            <a href="about.html" class="nav-link-item">About</a>
+        </div>
+        
+        <!-- Mobile menu button -->
+        <div class="mobile-nav-button">
+            <button class="mobile-menu-btn">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
     </nav>
-  </header>
-  <section class="hero">
-    <div class="patterns"></div>
-  </section>
-  <section class="intro">
-    <div class="intro-left">
-      <h1>Chấm isn’t just a full stop…<br>
-        It’s pressure, clash, flavor,<br>
-        and the spark of something new.</h1>
-    </div>
-    <div class="intro-right">
-      <p>
-        Much like the punctuation itself,<br>
-        Chấm marks the end of an unforgettable journey, one where we all have been challenged and tested, our skills honed and perfected. It also sets forth the start of our own separate paths, to the far reaches of the world, to the unknown. The end, yet the beginning.<br><br>
-        Chấm Exhibition is an exhibition showcasing the works of Capstone 2 students from Hanoi. 13 works from 13 students showcasing their knowledge and skills through a variety of design disciplines, including: Branding, Illustration, Graphic Design, Publication, UI/UX, and Spatial Design.
-      </p>
-      <a class="projects-link" href="#">See all projects &rarr;</a>
-    </div>
-  </section>
-  <section class="patterns-light"></section>
-  <footer>
-    <div class="footer-left">
-      <h2>Chấm. Exhibition</h2>
-      <p>
-        Chấm Exhibition Committee<br>
-        Bachelor of Design Studies<br>
-        School of Communication & Design<br>
-        from RMIT University Hanoi
-      </p>
-    </div>
-    <div class="footer-center">
-      <h3>Social</h3>
-      <a href="#">Instagram</a><br>
-      <a href="#">Facebook</a>
-    </div>
-    <div class="footer-right">
-      <img src="rmit-logo.png" alt="RMIT University" />
-      <span>School of Communication & Design</span>
-    </div>
-  </footer>
-  <script src="script.js"></script>
+
+    <main>
+        <!-- Hero section with abstract pattern -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="image-container">
+                    <img 
+                        src="https://api.builder.io/api/v1/image/assets/TEMP/e7cd4752109216e02843f516799d7aef8ae17cd7?width=2720" 
+                        alt="Abstract dot pattern design" 
+                        class="hero-image"
+                    />
+                </div>
+            </div>
+        </section>
+        
+        <!-- Main content section -->
+        <section class="content-section">
+            <div class="content-container">
+                <div class="content-grid">
+                    <div class="content-left">
+                        <h1 class="main-heading">
+                            Chấm isn't just a full stop…<br>
+                            It's pressure, clash, flavor,<br>
+                            and the spark of something new.
+                        </h1>
+                    </div>
+                    
+                    <div class="content-right">
+                        <p class="main-paragraph">
+                            Much like the punctuation itself,<br>
+                            Chấm marks the end of an unforgettable journey, one where<br>
+                            we all have been challenged and tested, our skills honed and<br>
+                            perfected. It also sets forth the start of our own separate<br>
+                            paths, to the far reaches of the world, to the unknown. The<br>
+                            end, yet the beginning.
+                        </p>
+                        
+                        <p class="main-paragraph">
+                            Chấm Exhibition is an exhibition showcasing the works of<br>
+                            Capstone 2 students from Hanoi. 13 works from 13 students<br>
+                            showcasing their knowledge and skills through a variety of<br>
+                            design disciplines, including: Branding, Marketing, Illustration, Graphic<br>
+                            Design, Publication, UI/UX, and Spatial Design.
+                        </p>
+                        
+                        <div class="cta-container">
+                            <a href="/projects" class="cta-link">
+                                See all projects →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Decorative pattern at bottom -->
+        <section class="pattern-section">
+            <div class="pattern-container">
+                <div class="pattern-overlay">
+                    <div class="image-container">
+                        <img 
+                            src="https://api.builder.io/api/v1/image/assets/TEMP/e7cd4752109216e02843f516799d7aef8ae17cd7?width=2720" 
+                            alt="Abstract dot pattern design" 
+                            class="pattern-image"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer-main">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 class="footer-heading-main">Chấm. Exhibition</h3>
+                    <div class="footer-text-block">
+                        <p>Chấm Exhibition, Capstone Projects</p>
+                        <p>Bachelor of Design Studies</p>
+                        <p>School of Communication & Design</p>
+                        <p>from RMIT University Hanoi</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading-social">Social</h4>
+                    <div class="footer-links">
+                        <a href="#" class="footer-social-link">Instagram</a>
+                        <a href="#" class="footer-social-link">Facebook</a>
+                    </div>
+                </div>
+                
+                <div class="footer-logo-section">
+                    <div class="footer-logo-container">
+                        <img 
+                            src="https://api.builder.io/api/v1/image/assets/TEMP/066c56b7410638c64147008e154db8849950ea58?width=568" 
+                            alt="RMIT University" 
+                            class="footer-logo-image"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

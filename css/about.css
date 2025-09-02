@@ -1,0 +1,290 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #ffffff;
+            color: #2C2C2C;
+            line-height: 1.4;
+        }
+
+        /* Navigation */
+        .navbar {
+            width: 100%;
+            height: 83px;
+            background-color: #FFB400;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-text {
+            font-size: 40px;
+            font-weight: 700;
+            color: #2C2C2C;
+        }
+
+        .logo-dot {
+            width: 9px;
+            height: 9px;
+            background-color: #2C2C2C;
+            border-radius: 50%;
+            margin-left: 8px;
+            margin-top: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-link {
+            font-size: 19px;
+            font-weight: 700;
+            color: #2C2C2C;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .nav-link:hover {
+            opacity: 0.8;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 67px 39px 0;
+            max-width: 1440px;
+            margin: 0;
+        }
+
+        .team-section {
+            display: flex;
+            margin-bottom: 80px;
+            height: 435px;
+        }
+
+        .team-image {
+            width: 774px;
+            height: 435px;
+            background-color: #736E69;
+            margin-right: 50px;
+            flex-shrink: 0;
+        }
+
+        .team-content {
+            flex: 1;
+            padding-top: 0;
+        }
+
+        .team-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #2C2C2C;
+            margin-bottom: 40px;
+            line-height: 38px;
+        }
+
+        .team-members {
+            font-size: 28px;
+            font-weight: 700;
+            color: #2C2C2C;
+            line-height: 38px;
+        }
+
+        .team-members p {
+            margin-bottom: 0;
+        }
+
+        /* Footer */
+        .footer {
+            width: 100%;
+            background-color: #231F20;
+            padding: 38px 40px;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            max-width: 1440px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .footer-left {
+            color: #ffffff;
+        }
+
+        .footer-title {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .footer-description {
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 1.4;
+        }
+
+        .footer-middle {
+            color: #ffffff;
+        }
+
+        .social-title {
+            font-size: 19px;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+
+        .social-links {
+            font-size: 19px;
+            font-weight: 400;
+        }
+
+        .social-links p {
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+
+        .social-links p:hover {
+            opacity: 0.8;
+        }
+
+        .footer-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .rmit-logo {
+            width: 284px;
+            height: auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .main-content {
+                padding: 40px 20px 0;
+            }
+            
+            .team-section {
+                height: auto;
+                margin-bottom: 60px;
+            }
+            
+            .team-image {
+                width: 60%;
+                height: 300px;
+                margin-right: 30px;
+            }
+        }
+
+        @media (max-width: 968px) {
+            .navbar {
+                padding: 0 20px;
+            }
+            
+            .nav-links {
+                gap: 20px;
+            }
+            
+            .team-section {
+                flex-direction: column;
+                margin-bottom: 50px;
+            }
+            
+            .team-image {
+                width: 100%;
+                height: 250px;
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+            
+            .team-title {
+                font-size: 24px;
+                margin-bottom: 25px;
+            }
+            
+            .team-members {
+                font-size: 24px;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .footer-title {
+                font-size: 32px;
+            }
+            
+            .rmit-logo {
+                width: 240px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .navbar {
+                height: 70px;
+                padding: 0 15px;
+            }
+            
+            .logo-text {
+                font-size: 32px;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .main-content {
+                padding: 30px 15px 0;
+            }
+            
+            .team-section {
+                margin-bottom: 40px;
+            }
+            
+            .team-image {
+                height: 200px;
+                margin-bottom: 20px;
+            }
+            
+            .team-title {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+            
+            .team-members {
+                font-size: 20px;
+                line-height: 32px;
+            }
+            
+            .footer {
+                padding: 30px 15px;
+            }
+            
+            .footer-title {
+                font-size: 28px;
+            }
+            
+            .footer-description,
+            .social-title,
+            .social-links {
+                font-size: 16px;
+            }
+            
+            .rmit-logo {
+                width: 200px;
+            }
+        }
