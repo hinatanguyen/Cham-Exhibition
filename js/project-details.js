@@ -17,6 +17,14 @@
                 document.getElementById('authorAvatar').src = project.avatar;
                 document.getElementById('authorEmail').href = project.email;
                 document.getElementById('authorPortfolio').href = project.portfolio;
+                
+                // Populate mobile author section
+                document.getElementById('authorNameMobile').textContent = project.author;
+                document.getElementById('authorBioMobile').textContent = project.authorBio;
+                document.getElementById('authorAvatarMobile').src = project.avatar;
+                document.getElementById('authorEmailMobile').href = project.email;
+                document.getElementById('authorPortfolioMobile').href = project.portfolio;
+                
                 document.getElementById('mainProjectImage').src = project.mainImage;
                 document.getElementById('galleryImage1').src = project.galleryImage1;
                 document.getElementById('galleryImage2').src = project.galleryImage2;

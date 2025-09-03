@@ -62,7 +62,7 @@ body {
 }
 
 .nav-links {
-    display: none;
+    display: flex;
     align-items: center;
     gap: 32px;
 }
@@ -80,7 +80,7 @@ body {
 }
 
 .mobile-nav-button {
-    display: block;
+    display: none;
 }
 
 .mobile-menu-btn {
@@ -95,6 +95,15 @@ body {
 .hero-section {
     background-color: var(--cham-orange);
     padding: 48px 24px;
+}
+
+/* Desktop: Show desktop hero, hide mobile pattern */
+.desktop-hero {
+    display: block;
+}
+
+.mobile-hero-pattern {
+    display: none;
 }
 
 .hero-container {
@@ -431,14 +440,217 @@ body {
     }
 }
 
-/* Utility classes for responsive behavior */
-@media (max-width: 767px) {
+/* iPhone 14 Pro Max optimized styles (430px) */
+@media (max-width: 430px) {
+    .nav-main {
+        height: 70px;
+        padding: 0 20px;
+    }
+    
+    .nav-logo-text {
+        font-size: 28px;
+    }
+    
+    .nav-logo-dot {
+        width: 7px;
+        height: 7px;
+        margin-bottom: 3px;
+    }
+    
     .nav-links {
-        display: none;
+        display: flex;
+        gap: 20px;
+    }
+    
+    .nav-link-item {
+        font-size: 14px;
+        font-weight: 700;
     }
     
     .mobile-nav-button {
+        display: none;
+    }
+    
+    /* Hide desktop hero image and show mobile pattern on mobile */
+    .desktop-hero {
+        display: none;
+    }
+    
+    .mobile-hero-pattern {
         display: block;
+        padding: 20px 0;
+    }
+    
+    .hero-section {
+        background-color: transparent;
+        padding: 24px 16px;
+    }
+    
+    .mobile-hero-pattern .squares-grid {
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 8px;
+        gap: 12px;
+        flex-wrap: nowrap;
+    }
+    
+    .mobile-hero-pattern .square-item {
+        flex-shrink: 0;
+        width: 70px;
+        height: 70px;
+    }
+    
+    .mobile-hero-pattern .square-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    
+    /* Content section optimizations */
+    .content-section {
+        padding: 32px 0;
+    }
+    
+    .content-container {
+        padding: 0 16px;
+    }
+    
+    .content-grid {
+        gap: 24px;
+    }
+    
+    .main-heading {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+    
+    .main-paragraph {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    .cta-link {
+        font-size: 14px;
+    }
+    
+    /* Mobile squares grid */
+    .pattern-section {
+        display: block;
+        background-color: var(--cham-gray);
+        padding: 20px 0;
+    }
+    
+    .pattern-container {
+        padding: 0 16px;
+    }
+    
+    .squares-grid {
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 8px;
+        gap: 12px;
+        flex-wrap: nowrap;
+    }
+    
+    .square-item {
+        flex-shrink: 0;
+        width: 70px;
+        height: 70px;
+    }
+    
+    .square-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    
+    /* In pattern section on mobile, hide squares 6-10 to show only 1-5 */
+    .pattern-section .square-item:nth-child(n+6) {
+        display: none;
+    }
+    
+    /* Footer optimizations */
+    .footer-main {
+        padding: 24px 16px;
+    }
+    
+    .footer-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        position: relative;
+    }
+    
+    .footer-section:first-child {
+        order: 1;
+    }
+    
+    .footer-section:nth-child(2) {
+        order: 2;
+        position: relative;
+        padding-right: 60px;
+    }
+    
+    .footer-heading-main {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    
+    .footer-heading-social {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    
+    .footer-text-block p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .footer-social-link {
+        font-size: 14px;
+    }
+    
+    .footer-logo-section {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        z-index: 1;
+    }
+    
+    .footer-logo-container {
+        text-align: right;
+    }
+    
+    .footer-logo-image {
+        height: 70px;
+        width: auto;
+    }
+}
+
+/* Utility classes for responsive behavior */
+@media (max-width: 767px) and (min-width: 431px) {
+    .nav-links {
+        display: flex;
+        gap: 24px;
+    }
+    
+    .nav-link-item {
+        font-size: 16px;
+    }
+    
+    .mobile-nav-button {
+        display: none;
     }
     
     /* Mobile hero section */

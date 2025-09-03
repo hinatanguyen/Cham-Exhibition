@@ -66,7 +66,7 @@ body {
 }
 
 .nav-links {
-    display: none;
+    display: flex;
     align-items: center;
     gap: 32px;
 }
@@ -84,7 +84,7 @@ body {
 }
 
 .mobile-nav-button {
-    display: block;
+    display: none;
 }
 
 .mobile-menu-btn {
@@ -138,7 +138,7 @@ body {
 
 /* Desktop Grid Layout */
 .projects-grid-desktop {
-    display: none;
+    display: block;
 }
 
 .grid-row {
@@ -146,10 +146,6 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
     margin-bottom: 48px;
-}
-
-.grid-spacer {
-    /* Empty space for staggered layout */
 }
 
 /* Tablet Grid Layout */
@@ -161,7 +157,7 @@ body {
 
 /* Mobile Grid Layout */
 .projects-grid-mobile {
-    display: grid;
+    display: none;
     grid-template-columns: 1fr;
     gap: 32px;
 }
@@ -257,6 +253,10 @@ body {
         display: grid;
     }
     
+    .projects-grid-desktop {
+        display: none;
+    }
+    
     .nav-links {
         display: flex;
     }
@@ -277,6 +277,10 @@ body {
 /* Desktop breakpoint (1024px and up) */
 @media (min-width: 1024px) {
     .projects-grid-tablet {
+        display: none;
+    }
+    
+    .projects-grid-mobile {
         display: none;
     }
     
@@ -348,14 +352,147 @@ body {
     }
 }
 
-/* Mobile responsive adjustments */
-@media (max-width: 767px) {
+/* iPhone 14 Pro Max optimized styles (430px) */
+@media (max-width: 430px) {
+    .nav-main {
+        height: 70px;
+        padding: 0 20px;
+    }
+    
+    .nav-logo-text {
+        font-size: 28px;
+    }
+    
+    .nav-logo-dot {
+        width: 7px;
+        height: 7px;
+        margin-bottom: 3px;
+    }
+    
     .nav-links {
-        display: none;
+        display: flex;
+        gap: 20px;
+    }
+    
+    .nav-link-item {
+        font-size: 14px;
+        font-weight: 700;
     }
     
     .mobile-nav-button {
-        display: block;
+        display: none;
+    }
+    
+    .main-content {
+        padding: 20px 16px;
+    }
+    
+    .projects-grid-desktop {
+        display: none;
+    }
+    
+    .projects-grid-mobile {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .project-card {
+        margin-bottom: 0;
+        padding: 0;
+    }
+    
+    .project-image {
+        width: 100%;
+        height: 200px;
+        background-color: var(--cham-gray);
+        margin-bottom: 12px;
+    }
+    
+    .project-title {
+        font-size: 14px;
+        line-height: 1.4;
+        margin-top: 12px;
+    }
+    
+    /* Footer styles for mobile */
+    .footer-main {
+        padding: 24px 16px;
+    }
+    
+    .footer-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        position: relative;
+    }
+    
+    .footer-section:first-child {
+        order: 1;
+    }
+    
+    .footer-section:nth-child(2) {
+        order: 2;
+        position: relative;
+        padding-right: 60px;
+    }
+    
+    .footer-heading-main {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    
+    .footer-heading-social {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    
+    .footer-text-block p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .footer-social-link {
+        font-size: 14px;
+    }
+    
+    .footer-logo-section {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        z-index: 1;
+    }
+    
+    .footer-logo-container {
+        text-align: right;
+    }
+    
+    .footer-logo-image {
+        height: 70px;
+        width: auto;
+    }
+}
+
+/* Mobile responsive adjustments (431px - 767px) */
+@media (max-width: 767px) and (min-width: 431px) {
+    .nav-links {
+        display: flex;
+        gap: 24px;
+    }
+    
+    .nav-link-item {
+        font-size: 16px;
+    }
+    
+    .mobile-nav-button {
+        display: none;
     }
     
     .main-content {
@@ -368,7 +505,7 @@ body {
     }
 }
 
-/* Very small mobile screens */
+/* Very small mobile screens (older styles preserved for compatibility) */
 @media (max-width: 480px) {
     .main-content {
         padding: 24px 16px;
