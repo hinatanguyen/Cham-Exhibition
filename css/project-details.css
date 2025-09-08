@@ -101,7 +101,7 @@ body {
 .main-content {
     width: 100%;
     margin: 0;
-    padding: 40px 20px;
+    padding: 40px 20px 40px 24px;
 }
 
 /* Project Header */
@@ -123,6 +123,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+    padding-left: 15px;
 }
 
 /* Mobile Author Section (Hidden on desktop) */
