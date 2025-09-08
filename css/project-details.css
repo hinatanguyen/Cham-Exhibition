@@ -618,13 +618,11 @@ body {
 
     .main-image {
         height: 270px;
-        margin-bottom: 20px;
     }
 
     .gallery-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 12px;
-        margin-bottom: 20px;
+        gap: 16px;
     }
 
     .gallery-item:first-child,
@@ -634,7 +632,6 @@ body {
 
     .full-width-image {
         height: 180px;
-        margin-bottom: 20px;
     }
     
     /* Footer styles for mobile */
@@ -715,7 +712,7 @@ body {
 
     .gallery-grid {
         grid-template-columns: 1fr;
-        gap: 12px;
+        gap: 16px;
     }
 
     .gallery-item:first-child,
