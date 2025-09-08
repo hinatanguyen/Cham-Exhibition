@@ -380,9 +380,13 @@ body {
         font-size: 24px;
     }
     
-    .footer-text-block p,
+    .footer-text-block p {
+        font-size: 16px;
+    }
+    
     .footer-social-link {
         font-size: 16px;
+        font-weight: 800;
     }
 }
 

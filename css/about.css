@@ -201,6 +201,7 @@ body {
     font-size: 14px;
     text-decoration: none;
     transition: opacity 0.3s ease;
+    font-weight: 800;
 }
 
 .footer-social-link:hover {
@@ -260,9 +261,13 @@ body {
         font-size: 24px;
     }
     
-    .footer-text-block p,
+    .footer-text-block p {
+        font-size: 16px;
+    }
+    
     .footer-social-link {
         font-size: 16px;
+        font-weight: 800;
     }
 }
 
@@ -406,5 +411,6 @@ body {
     
     .footer-social-link {
         font-size: 14px;
+        font-weight: 800;
     }
 }

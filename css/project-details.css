@@ -175,6 +175,7 @@ body {
     font-weight: 700;
     text-decoration: none;
     transition: opacity 0.3s ease;
+    font-weight: 800;
 }
 
 .author-link:hover {
@@ -305,7 +306,7 @@ body {
 .back-link {
     color: var(--cham-dark);
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 800;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -383,6 +384,7 @@ body {
     font-size: 14px;
     text-decoration: none;
     transition: opacity 0.3s ease;
+    font-weight: 800;
 }
 
 .footer-social-link:hover {
