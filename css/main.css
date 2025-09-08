@@ -185,7 +185,6 @@ body {
 
 /* Pattern Section */
 .pattern-section {
-    background-color: var(--cham-gray);
     padding: 32px 0;
     overflow-x: auto;
 }
@@ -283,21 +282,6 @@ body {
     opacity: 0.8;
 }
 
-.footer-logo-section {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-}
-
-.footer-logo-container {
-    text-align: left;
-}
-
-.footer-logo-image {
-    height: 80px;
-    width: auto;
-    filter: brightness(0) invert(1);
-}
 
 /* Tablet Styles */
 @media (min-width: 768px) {
@@ -313,9 +297,6 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
     
-    .footer-logo-section {
-        grid-column: span 2;
-    }
 }
 
 /* Desktop Styles */
@@ -393,19 +374,6 @@ body {
     
     .footer-grid {
         grid-template-columns: repeat(3, 1fr);
-    }
-    
-    .footer-logo-section {
-        grid-column: span 1;
-        justify-content: flex-end;
-    }
-    
-    .footer-logo-container {
-        text-align: right;
-    }
-    
-    .footer-logo-image {
-        height: 120px;
     }
     
     .footer-heading-main {
@@ -538,7 +506,6 @@ body {
     /* Mobile squares grid */
     .pattern-section {
         display: block;
-        background-color: var(--cham-gray);
         padding: 20px 0;
     }
     
@@ -619,23 +586,7 @@ body {
     .footer-social-link {
         font-size: 14px;
     }
-    
-    .footer-logo-section {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        margin: 0;
-        z-index: 1;
-    }
-    
-    .footer-logo-container {
-        text-align: right;
-    }
-    
-    .footer-logo-image {
-        height: 70px;
-        width: auto;
-    }
+ 
 }
 
 /* Utility classes for responsive behavior */

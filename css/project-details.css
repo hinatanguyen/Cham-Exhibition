@@ -159,7 +159,7 @@ body {
     line-height: 1.5;
     color: var(--cham-dark);
     margin: 0 0 24px 0;
-    max-width: 280px;
+    max-width: 300px;
 }
 
 .author-links {
@@ -188,10 +188,10 @@ body {
 }
 
 .project-title {
-    font-size: 48px;
-    font-weight: 700;
+    font-size: 36px;
+    font-weight: 800;
     color: var(--cham-dark);
-    margin: 0;
+    margin: 0 0 36px 0;
     line-height: 1.2;
     max-width: 600px;
 }
@@ -200,6 +200,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-bottom: 36px;
 }
 
 .project-tags {
@@ -221,9 +222,10 @@ body {
 
 .project-description {
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.5;
     color: var(--cham-dark);
     max-width: 600px;
+    margin-bottom: 36px;
 }
 
 /* Project Gallery */
@@ -386,21 +388,6 @@ body {
     opacity: 0.8;
 }
 
-.footer-logo-section {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.footer-logo-container {
-    text-align: left;
-}
-
-.footer-logo-image {
-    height: 80px;
-    width: auto;
-    filter: brightness(0) invert(1);
-}
-
 /* Responsive Design */
 /* Tablet Styles */
 @media (min-width: 768px) {
@@ -415,10 +402,7 @@ body {
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
-    .footer-logo-section {
-        grid-column: span 2;
-    }
+
 }
 
 /* Desktop Styles */
@@ -453,18 +437,6 @@ body {
         grid-template-columns: repeat(3, 1fr);
     }
     
-    .footer-logo-section {
-        grid-column: span 1;
-        justify-content: flex-end;
-    }
-    
-    .footer-logo-container {
-        text-align: right;
-    }
-    
-    .footer-logo-image {
-        height: 120px;
-    }
     
     .footer-heading-main {
         font-size: 24px;
@@ -709,23 +681,6 @@ body {
         font-size: 14px;
     }
     
-    .footer-logo-section {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        margin: 0;
-        z-index: 1;
-    }
-    
-    .footer-logo-container {
-        text-align: right;
-    }
-    
-    .footer-logo-image {
-        height: 70px;
-        width: auto;
-    }
-}
 
 @media (max-width: 480px) and (min-width: 431px) {
     .author-section {
@@ -784,5 +739,6 @@ body {
     .mobile-nav-button {
         display: none;
     }
+}
 }
 }

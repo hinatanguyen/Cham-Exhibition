@@ -207,20 +207,6 @@ body {
     opacity: 0.8;
 }
 
-.footer-logo-section {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.footer-logo-container {
-    text-align: left;
-}
-
-.footer-logo-image {
-    height: 80px;
-    width: auto;
-    filter: brightness(0) invert(1);
-}
 
 /* Responsive Design */
 /* Tablet Styles */
@@ -235,10 +221,6 @@ body {
     
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .footer-logo-section {
-        grid-column: span 2;
     }
 }
 
@@ -272,20 +254,6 @@ body {
     
     .footer-grid {
         grid-template-columns: repeat(3, 1fr);
-    }
-    
-    .footer-logo-section {
-        grid-column: span 1;
-        justify-content: flex-end;
-    }
-    
-    .footer-logo-container {
-        text-align: right;
-    }
-    
-    .footer-logo-image {
-        height: 120px;
-        width: auto;
     }
     
     .footer-heading-main {
@@ -419,23 +387,6 @@ body {
         display: flex;
         flex-direction: column;
         gap: 8px;
-    }
-    
-    .footer-logo-section {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        margin: 0;
-        z-index: 1;
-    }
-    
-    .footer-logo-container {
-        text-align: right;
-    }
-    
-    .footer-logo-image {
-        height: 70px;
-        width: auto;
     }
     
     .footer-heading-main {

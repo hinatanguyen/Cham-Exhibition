@@ -226,20 +226,6 @@ body {
     opacity: 0.8;
 }
 
-.footer-logo-section {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.footer-logo-container {
-    text-align: left;
-}
-
-.footer-logo-image {
-    height: 80px;
-    width: auto;
-    filter: brightness(0) invert(1);
-}
 
 /* Responsive Design */
 
@@ -268,10 +254,7 @@ body {
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
-    .footer-logo-section {
-        grid-column: span 2;
-    }
+
 }
 
 /* Desktop breakpoint (1024px and up) */
@@ -320,19 +303,6 @@ body {
     
     .footer-grid {
         grid-template-columns: repeat(3, 1fr);
-    }
-    
-    .footer-logo-section {
-        grid-column: span 1;
-        justify-content: flex-end;
-    }
-    
-    .footer-logo-container {
-        text-align: right;
-    }
-    
-    .footer-logo-image {
-        height: 120px;
     }
     
     .footer-heading-main {
@@ -462,22 +432,6 @@ body {
         font-size: 14px;
     }
     
-    .footer-logo-section {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        margin: 0;
-        z-index: 1;
-    }
-    
-    .footer-logo-container {
-        text-align: right;
-    }
-    
-    .footer-logo-image {
-        height: 70px;
-        width: auto;
-    }
 }
 
 /* Mobile responsive adjustments (431px - 767px) */
