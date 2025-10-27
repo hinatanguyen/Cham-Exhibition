@@ -105,7 +105,7 @@ const projectData = {
         portfolio: "https://duclee.framer.website/",
         mainImage: "/images/project_data/project7/main.png",
         galleryImage1: "/images/project_data/project7/gal1.png",
-        galleryImage2: "/images/project_data/project7/gal2.png",
+        galleryImage2: "/images/project_data/project7/gal2.jpg",
     },
 
     // Pham Hong Diep Truc
