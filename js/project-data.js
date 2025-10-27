@@ -1,19 +1,23 @@
 const projectData = {
+
+    // Nguyen Hien Mai 
     1: {
-        title: "DevOpsとゲーム開発の融合：Hinataのデジタルプレイグラウンド",
-        author: "Hinata Nguyen",
-        authorBio: "日本出身のDevOpsエンジニア兼ゲーム開発者です。スケーラブルなシステム構築と没入感のあるデジタル体験の創造に情熱を注いでいます。自動化、クラウドインフラ、クリエイティブなコーディングの交差点で活躍し、技術的に堅牢でありながら芸術的にも魅力的なツールやゲームを開発しています",
-        category1: "DevOps Engineering",
-        category2: "Game Developer",
-        description: "このポートフォリオでは、日本を拠点に活動するDevOpsエンジニア兼ゲーム開発者、Hinataの作品をご紹介しています。クラウド自動化やCI/CDパイプラインから、インディーゲーム開発、インタラクティブデザインに至るまで、幅広いプロジェクトをご覧いただけます。",
-        avatar: "/images/project_data/project1/avatar-1.jpeg",
-        email: "mailto:hinatannguyen2005@gmail.com",
+        title: "A Random Title",
+        author: "Nguyen Hien Mai",
+        authorBio: "Chi MaiLisa Idol e hjhjhjhjhjhj",
+        category1: "Editorial Designer",
+        category2: "Illustrator",
+        description: "‘The Swing’ is a graphic novel focusing on a mom's childhood trauma, which lead to her overprotective behaviors towards her son. The story gently explores the complicated love between parents and children, especially in Vietnamese families shaped by helicopter parenting. Through the mother’s quiet voice and scattered memories, the story speaks to young adults who may feel both cared for and suffocated. The design uses soft visuals, pauses, and minimal text to reflect what often goes unsaid in families. It doesn’t try to judge or fix, but to open space for recognition and reflection. By showing one mother’s struggle, it invites readers to look at their own relationships and hopefully begin honest conversations with the people who raised them.",
+        avatar: "/images/project_data/project1/avatar-1.png",
+        email: "mailto:yakus084@gmail.com",
         portfolio: "https://github.com/hinatanguyen",
-        mainImage: "/images/project_data/project1/main.jpeg",
-        galleryImage1: "/images/project_data/project1/gal1.jpeg",
-        galleryImage2: "/images/project_data/project1/gal2.jpeg",
-        fullWidthImage: "/images/project_data/project1/full.jpeg"
+        mainImage: "/images/project_data/project1/main.png",
+        galleryImage1: "/images/project_data/project1/gal1.png",
+        galleryImage2: "/images/project_data/project1/gal2.png",
+        fullWidthImage: "/images/project_data/project1/full.png"
     },
+
+    // Tran The Trung
     2: {
         title: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
         author: "Jane Smith",
@@ -29,6 +33,8 @@ const projectData = {
         galleryImage2: "https://via.placeholder.com/400x300/888888/555555?text=Gallery+2",
         fullWidthImage: "https://via.placeholder.com/1200x400/888888/555555?text=Full+Width"
     },
+
+    // Nguyen Trong Phu
     3: {
         title: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
         author: "Alex Johnson",
@@ -44,6 +50,8 @@ const projectData = {
         galleryImage2: "https://via.placeholder.com/400x300/777777/444444?text=Gallery+2",
         fullWidthImage: "https://via.placeholder.com/1200x400/777777/444444?text=Full+Width"
     },
+
+    // Truong Tri Lam
     4: {
         title: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
         author: "Sarah Chen",
@@ -59,6 +67,8 @@ const projectData = {
         galleryImage2: "https://via.placeholder.com/400x300/666666/333333?text=Gallery+2",
         fullWidthImage: "https://via.placeholder.com/1200x400/666666/333333?text=Full+Width"
     },
+
+    // Nguyen Duy Hung
     5: {
         title: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
         author: "Mark Thompson",
@@ -74,6 +84,8 @@ const projectData = {
         galleryImage2: "https://via.placeholder.com/400x300/555555/222222?text=Gallery+2",
         fullWidthImage: "https://via.placeholder.com/1200x400/555555/222222?text=Full+Width"
     },
+
+    // Tran Duy Anh
     6: {
         title: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
         author: "Emma Wilson",
@@ -89,6 +101,8 @@ const projectData = {
         galleryImage2: "https://via.placeholder.com/400x300/444444/111111?text=Gallery+2",
         fullWidthImage: "https://via.placeholder.com/1200x400/444444/111111?text=Full+Width"
     },
+
+    // Le Trung Duc
     7: {
         title: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
         author: "David Lee",
@@ -104,6 +118,8 @@ const projectData = {
         galleryImage2: "https://via.placeholder.com/400x300/999999/666666?text=Gallery+2",
         fullWidthImage: "https://via.placeholder.com/1200x400/999999/666666?text=Full+Width"
     },
+
+    // Pham Hong Diep Truc
     8: {
         title: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
         author: "Lisa Garcia",
@@ -119,6 +135,8 @@ const projectData = {
         galleryImage2: "https://via.placeholder.com/400x300/888888/555555?text=Gallery+2",
         fullWidthImage: "https://via.placeholder.com/1200x400/888888/555555?text=Full+Width"
     },
+
+    // Le Bao Phuong
     9: {
         title: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
         author: "Ryan Park",
@@ -134,6 +152,8 @@ const projectData = {
         galleryImage2: "https://via.placeholder.com/400x300/777777/444444?text=Gallery+2",
         fullWidthImage: "https://via.placeholder.com/1200x400/777777/444444?text=Full+Width"
     },
+
+    // Nguyen Ngoc Dung
     10: {
         title: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
         author: "Maya Patel",
@@ -149,6 +169,8 @@ const projectData = {
         galleryImage2: "https://via.placeholder.com/400x300/666666/333333?text=Gallery+2",
         fullWidthImage: "https://via.placeholder.com/1200x400/666666/333333?text=Full+Width"
     },
+
+    // Vu Duc Minh
     11: {
         title: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
         author: "Sophie Martin",
@@ -164,6 +186,8 @@ const projectData = {
         galleryImage2: "https://via.placeholder.com/400x300/555555/222222?text=Gallery+2",
         fullWidthImage: "https://via.placeholder.com/1200x400/555555/222222?text=Full+Width"
     },
+
+    // Le Quang Anh
     12: {
         title: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
         author: "Alex Rivera",
