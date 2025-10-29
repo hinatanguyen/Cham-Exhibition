@@ -11,9 +11,9 @@ const projectData = {
         avatar: "/images/project_data/project1/avatar-1.png",
         email: "mailto:yakus084@gmail.com",
         portfolio: "https://github.com/hinatanguyen",
-        mainImage: "/images/project_data/project1/main.png",
-        galleryImage1: "/images/project_data/project1/gal1.png",
-        galleryImage2: "/images/project_data/project1/gal2.png",
+        mainImage: "/images/project_data/project1/main.avif",
+        galleryImage1: "/images/project_data/project1/gal1.avif",
+        galleryImage2: "/images/project_data/project1/gal2.avif",
     },
 
     // Tran The Trung
@@ -42,9 +42,9 @@ const projectData = {
         avatar: "../images/project_data/project3/avatar-3.png",
         email: "mailto:wiu.ngn@gmail.com",
         portfolio: "http://www.behance.net/wiunguyen",
-        mainImage: "/images/project_data/project3/main.jpg",
-        galleryImage1: "/images/project_data/project3/gal1.jpg",
-        galleryImage2: "/images/project_data/project3/gal2.JPG",
+        mainImage: "/images/project_data/project3/main.avif",
+        galleryImage1: "/images/project_data/project3/gal1.avif",
+        galleryImage2: "/images/project_data/project3/gal2.avif",
     },
 
     // Truong Tri Lam
@@ -73,9 +73,9 @@ const projectData = {
         avatar: "../images/project_data/project5/avatar-5.png",
         email: "mailto:duyhungn10202003@gmail.com",
         portfolio: "https://markthompson.arch.com",
-        mainImage: "/images/project_data/project5/main.JPG",
-        galleryImage1: "/images/project_data/project5/gal1.JPG",
-        galleryImage2: "/images/project_data/project5/gal2.JPG",
+        mainImage: "/images/project_data/project5/main.avif",
+        galleryImage1: "/images/project_data/project5/gal1.avif",
+        galleryImage2: "/images/project_data/project5/gal2.avif",
     },
 
     // Tran Duy Anh
@@ -88,9 +88,9 @@ const projectData = {
         avatar: "../images/project_data/project6/avatar-6.png",
         email: "mailto:tranduyanh230604@gmail.com",
         portfolio: "https://emmawilson.product.com",
-        mainImage: "/images/project_data/project6/main.png",
-        galleryImage1: "/images/project_data/project6/gal1.jpg",
-        galleryImage2: "/images/project_data/project6/gal2.jpg",
+        mainImage: "/images/project_data/project6/main.avif",
+        galleryImage1: "/images/project_data/project6/gal1.avif",
+        galleryImage2: "/images/project_data/project6/gal2.avif",
     },
 
     // Le Trung Duc
@@ -103,9 +103,9 @@ const projectData = {
         avatar: "../images/project_data/project7/avatar-7.png",
         email: "mailto:ltduc3101@gmail.com",
         portfolio: "https://duclee.framer.website/",
-        mainImage: "/images/project_data/project7/main.png",
-        galleryImage1: "/images/project_data/project7/gal1.png",
-        galleryImage2: "/images/project_data/project7/gal2.jpg",
+        mainImage: "/images/project_data/project7/main.avif",
+        galleryImage1: "/images/project_data/project7/gal1.avif",
+        galleryImage2: "/images/project_data/project7/gal2.avif",
     },
 
     // Pham Hong Diep Truc
@@ -118,9 +118,9 @@ const projectData = {
         avatar: "../images/project_data/project8/avatar-8.png",
         email: "mailto:phdieptruc.work@gmail.com",
         portfolio: "https://lisagarcia.marketing.com",
-        mainImage: "/images/project_data/project8/main.jpg",
-        galleryImage1: "/images/project_data/project8/gal1.png",
-        galleryImage2: "/images/project_data/project8/gal2.jpg",
+        mainImage: "/images/project_data/project8/main.avif",
+        galleryImage1: "/images/project_data/project8/gal1.avif",
+        galleryImage2: "/images/project_data/project8/gal2.avif",
     },
 
     // Le Bao Phuong
@@ -133,9 +133,9 @@ const projectData = {
         avatar: "../images/project_data/project9/avatar-9.png",
         email: "mailto:lebaophuongtn@gmail.com",
         portfolio: "https://ryanpark.art.com",
-        mainImage: "/images/project_data/project9/main.png",
-        galleryImage1: "/images/project_data/project9/gal1.png",
-        galleryImage2: "/images/project_data/project9/gal2.png",
+        mainImage: "/images/project_data/project9/main.avif",
+        galleryImage1: "/images/project_data/project9/gal1.avif",
+        galleryImage2: "/images/project_data/project9/gal2.avif",
     },
 
     // Nguyen Ngoc Dung
@@ -164,9 +164,9 @@ const projectData = {
         avatar: "../images/project_data/project11/avatar-11.png",
         email: "mailto:vuducminh666@gmail.com",
         portfolio: "https://www.behance.net/vuducminh555",
-        mainImage: "/images/project_data/project11/main.jpg",
-        galleryImage1: "/images/project_data/project11/gal1.jpg",
-        galleryImage2: "/images/project_data/project11/gal2.jpg",
+        mainImage: "/images/project_data/project11/main.avif",
+        galleryImage1: "/images/project_data/project11/gal1.avif",
+        galleryImage2: "/images/project_data/project11/gal2.avif",
     },
 
     // Le Quang Anh
