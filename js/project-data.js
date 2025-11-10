@@ -57,10 +57,9 @@ const projectData = {
         avatar: "../images/project_data/project4/avatar-4.png",
         email: "mailto:lamtruong828868@gmail.com",
         portfolio: "https://sarahchen.motion.com",
-        mainImage: "https://via.placeholder.com/800x600/666666/333333?text=Motion+Design",
-        galleryImage1: "https://via.placeholder.com/400x300/666666/333333?text=Gallery+1",
-        galleryImage2: "https://via.placeholder.com/400x300/666666/333333?text=Gallery+2",
-        fullWidthImage: "https://via.placeholder.com/1200x400/666666/333333?text=Full+Width"
+        mainImage: "/images/project_data/project4/main.avif",
+        galleryImage1: "/images/project_data/project4/gal1.avif",
+        galleryImage2: "/images/project_data/project4/gal2.avif",
     },
 
     // Nguyen Duy Hung
