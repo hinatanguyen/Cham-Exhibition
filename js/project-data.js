@@ -26,10 +26,9 @@ const projectData = {
         avatar: "../images/project_data/project2/avatar-2.png",
         email: "mailto:thetrungtran2002@hotmail.com",
         portfolio: "https://janesmith.design.com",
-        mainImage: "https://via.placeholder.com/800x600/888888/555555?text=Main+Image",
-        galleryImage1: "https://via.placeholder.com/400x300/888888/555555?text=Gallery+1",
-        galleryImage2: "https://via.placeholder.com/400x300/888888/555555?text=Gallery+2",
-        fullWidthImage: "https://via.placeholder.com/1200x400/888888/555555?text=Full+Width"
+        mainImage: "/images/project_data/project2/main.avif",
+        galleryImage1: "/images/project_data/project2/gal1.avif",
+        galleryImage2: "/images/project_data/project2/gal2.avif",
     },
 
     // Nguyen Trong Phu
