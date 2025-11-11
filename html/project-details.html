@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detailed view of student design projects from Chấm Exhibition">
     <title>Project Details - Chấm. Exhibition</title>
     <link rel="icon" type="image/x-icon" href="/images/main/favicon.png">
-    <link rel="stylesheet" href="../css/project-details.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/project-details.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -38,14 +41,14 @@
         <div class="project-header">
             <div class="author-section">
                 <div class="author-avatar">
-                    <img src="" alt="Author Avatar" class="author-image" id="authorAvatar">
+                    <img src="" alt="Author profile picture" class="author-image" id="authorAvatar" loading="lazy">
                 </div>
                 <div class="author-info">
                     <h2 class="author-name" id="authorName">Loading...</h2>
                     <p class="author-bio" id="authorBio">Loading bio...</p>
                     <div class="author-links">
-                        <a href="#" class="author-link" id="authorEmail">Email →</a>
-                        <a href="#" class="author-link" id="authorPortfolio">Portfolio →</a>
+                        <a href="#" class="author-link" id="authorEmail" rel="noopener">Email →</a>
+                        <a href="#" class="author-link" id="authorPortfolio" target="_blank" rel="noopener noreferrer">Portfolio →</a>
                     </div>
                 </div>
             </div>
@@ -66,32 +69,29 @@
 
         <div class="project-gallery">
             <div class="main-image">
-                <img src="" alt="Main Project Image" id="mainProjectImage">
+                <img src="" alt="Main project showcase" id="mainProjectImage" loading="lazy">
             </div>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="" alt="Gallery Image 1" id="galleryImage1">
+                    <img src="" alt="Project gallery image 1" id="galleryImage1" loading="lazy">
                 </div>
                 <div class="gallery-item">
-                    <img src="" alt="Gallery Image 2" id="galleryImage2">
+                    <img src="" alt="Project gallery image 2" id="galleryImage2" loading="lazy">
                 </div>
             </div>
-         <!--   <div class="full-width-image">
-                <img src="" alt="Full Width Image" id="fullWidthImage">
-            </div> --> 
         </div>
 
         <!-- Mobile Author Section (appears at bottom on mobile) -->
         <div class="author-section-mobile">
             <div class="author-avatar">
-                <img src="" alt="Author Avatar" class="author-image" id="authorAvatarMobile">
+                <img src="" alt="Author profile picture" class="author-image" id="authorAvatarMobile" loading="lazy">
             </div>
             <div class="author-info">
                 <h2 class="author-name" id="authorNameMobile">Loading...</h2>
                 <p class="author-bio" id="authorBioMobile">Loading bio...</p>
                 <div class="author-links">
-                    <a href="#" class="author-link" id="authorEmailMobile">Email →</a>
-                    <a href="#" class="author-link" id="authorPortfolioMobile">Portfolio →</a>
+                    <a href="#" class="author-link" id="authorEmailMobile" rel="noopener">Email →</a>
+                    <a href="#" class="author-link" id="authorPortfolioMobile" target="_blank" rel="noopener noreferrer">Portfolio →</a>
                 </div>
             </div>
         </div>
