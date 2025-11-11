@@ -15,8 +15,8 @@
 
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    background-color: #ffffff;
-    color: #2C2C2C;
+    background-color: var(--white);
+    color: var(--cham-dark);
     line-height: 1.4;
 }
 
@@ -59,12 +59,6 @@ body {
     border-radius: 50%;
     margin-left: 4px;
     margin-bottom: 4px;
-}
-
-.nav-logo-link {
-    display: flex;
-    align-items: end;
-    text-decoration: none;
 }
 
 .nav-links {
@@ -172,10 +166,9 @@ body {
 .author-link {
     color: var(--cham-dark);
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 800;
     text-decoration: none;
     transition: opacity 0.3s ease;
-    font-weight: 800;
 }
 
 .author-link:hover {
@@ -265,13 +258,6 @@ body {
     background-color: #999999;
     border-radius: 8px;
     overflow: hidden;
-}
-
-.gallery-item:first-child {
-    height: 750px;
-}
-
-.gallery-item:last-child {
     height: 750px;
 }
 
@@ -319,11 +305,6 @@ body {
 
 .back-link:hover {
     opacity: 0.8;
-}
-
-.back-link::before {
-    content: "";
-    margin-right: 0px;
 }
 
 /* Footer */
@@ -405,7 +386,6 @@ body {
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
 /* Desktop Styles */
@@ -440,7 +420,6 @@ body {
         grid-template-columns: repeat(3, 1fr);
     }
     
-    
     .footer-heading-main {
         font-size: 24px;
     }
@@ -451,6 +430,7 @@ body {
     }
 }
 
+/* Tablet optimized styles */
 @media (max-width: 968px) {
     .main-content {
         padding: 20px 15px;
@@ -487,16 +467,29 @@ body {
         gap: 16px;
     }
 
-    .gallery-item:first-child {
-        height: 680px;
-    }
-
-    .gallery-item:last-child {
+    .gallery-item {
         height: 680px;
     }
 
     .full-width-image {
         height: 265px;
+    }
+}
+
+/* Mobile responsive adjustments (431px - 767px) */
+@media (max-width: 767px) and (min-width: 431px) {
+    .nav-links {
+        display: flex;
+        gap: 24px;
+    }
+    
+    .nav-link-item {
+        font-size: 16px;
+    }
+    
+    .mobile-nav-button {
+        display: none;
+    }
 }
 
 /* iPhone 14 Pro Max optimized styles (430px) */
@@ -625,8 +618,7 @@ body {
         gap: 16px;
     }
 
-    .gallery-item:first-child,
-    .gallery-item:last-child {
+    .gallery-item {
         height: 300px;
     }
 
@@ -680,7 +672,7 @@ body {
     .footer-social-link {
         font-size: 14px;
     }
-    
+}
 
 @media (max-width: 480px) and (min-width: 431px) {
     .author-section {
@@ -715,30 +707,11 @@ body {
         gap: 16px;
     }
 
-    .gallery-item:first-child,
-    .gallery-item:last-child {
+    .gallery-item {
         height: 150px;
     }
 
     .full-width-image {
         height: 200px;
     }
-}
-
-/* Utility classes for responsive behavior */
-@media (max-width: 767px) and (min-width: 431px) {
-    .nav-links {
-        display: flex;
-        gap: 24px;
-    }
-    
-    .nav-link-item {
-        font-size: 16px;
-    }
-    
-    .mobile-nav-button {
-        display: none;
-    }
-}
-}
 }
